@@ -1,0 +1,25 @@
+{
+  "name": "wordcloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify js/main.js -o bundle.js -v",
+    "server": "node server.js",
+    "postinstall": "mkdir assets; cp -a node_modules/kuromoji/dict assets/dict"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "d3": "^6.2.0",
+    "express": "^4.17.1",
+    "kuromoji": "^0.1.2",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-google": "^0.14.0"
+  }
+}
